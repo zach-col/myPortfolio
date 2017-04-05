@@ -14,8 +14,9 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <!-- animate css -->
   <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <script src="js/angular.min.js"></script>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" ng-app="myApp">
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -31,21 +32,21 @@
         <div id="navbar" class="navbar-collapse collapse">
 
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="aboutMe.html">About Me</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfollio<span class="caret"></span></a>
+          <li class="active"><a href="#/">Home</a></li>
+          <li><a href="#/aboutMe">About Me</a></li>
+          <li><a href="#/contact">Contact</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" >Portfollio<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="keenDiamonds.html"><h5 class="navLink">Keen Diamonds Project</h5></a></li>
-              <li><a href="masCakes.html"><h5 class="navLink">Ma's Cake's Project</h5></a></li>
-              <li><a href="djRock.html"><h5 class="navLink">Dj Rock Project</h5></a></li>
-              <li><a href="foodMatrix.html"><h5 class="navLink">Block Chain Hackathon</h5></a></li>
-              <li><a href="internship.html"><h5 class="navLink">Internship</h5></a></li>
-              <li><a href="touse.html"><h5 class="navLink">ATX Hack For Change</h5></a></li>
-              <li><a href="cars.html"><h5 class="navLink">Cars Project</h5></a></li>
-              <li><a href="veterans.html"><h5 class="navLink">Va Hackathon</h5></a></li>
-              <li><a href="dreamCalculator.html"><h5 class="navLink">Dream Calculator Project</h5></a></li>
-              <li><a href="fatAlbert.html"><h5 class="navLink">Galvanize Hackathon</h5></a></li>
+              <li><a href="#/keenDiamonds"><h5 class="navLink">Keen Diamonds Project</h5></a></li>
+              <li><a href="#/masCakes"><h5 class="navLink">Ma's Cake's Project</h5></a></li>
+              <li><a href="#/djRock"><h5 class="navLink">Dj Rock Project</h5></a></li>
+              <li><a href="#/blockChain"><h5 class="navLink">Block Chain Hackathon</h5></a></li>
+              <li><a href="#/theInternship"><h5 class="navLink">Internship</h5></a></li>
+              <li><a href="#/ATXHack4Change"><h5 class="navLink">ATX Hack For Change</h5></a></li>
+              <li><a href="#/cars"><h5 class="navLink">Cars Project</h5></a></li>
+              <li><a href="#/VeteransAffairsHackathon"><h5 class="navLink">Va Hackathon</h5></a></li>
+              <li><a href="#/dreamCalculator"><h5 class="navLink">Dream Calculator Project</h5></a></li>
+              <li><a href="#/galvanizeHackathon"><h5 class="navLink">Galvanize Hackathon</h5></a></li>
             </ul>
           </li>
         </ul>
@@ -55,162 +56,15 @@
 <div id="home">
 </div>
 
-<div id="headerContainer">
-  <img src="img/austin.jpg" id="headerImg">
-  <div id="headerText">
-    <h1>
-      <a href="" class="typewrite" id="headerTyping" data-period="2000" data-type='[ "Hello, Im Zachariah.", "a front-end developer", "who works with", "Html Css Javascript Jquery Bootstrap Angular" ]'>
-        <span class="wrap"></span>
-      </a>
-    </h1>
-  </div>
+<div ng-view>
+  
 </div>
-
-<div class="container">
-
-  <div class="row post">
-    <div class="col-lg-8 col-md-8">
-      <img class="img-responsive projectImg"src="img/diamonds.png"/>
-    </div>
-    <div class="col-lg-4 col-md-4 info">
-      <h1>Keen Diamond's Project</h1>
-      <h3>Keen Diamond's Project... </h3>
-      <a href="keenDiamonds.html">
-        <button type="button" class="btn btn-success readMore">Read More</button>
-      </a>
-    </div>
-  </div><!-- end of row -->
-
-  <div class="row post">
-    <div class="col-lg-8 col-md-8">
-      <img class="img-responsive projectImg"src="img/cake.png"/>
-    </div>
-    <div class="col-lg-4 col-md-4 info">
-      <h1>Ma's Cake's Project</h1>
-      <h3>Ma's Cake's Project... </h3>
-      <a href="masCakes.html">
-        <button type="button" class="btn btn-success readMore">Read More</button>
-      </a>
-    </div>
-  </div><!-- end of row -->
-
-  <div class="row post">
-    <div class="col-lg-8 col-md-8">
-      <img class="img-responsive projectImg"src="img/theDj.png"/>
-    </div>
-    <div class="col-lg-4 col-md-4 info">
-      <h1>The Dj project</h1>
-      <h3>The Dj project... </h3>
-      <a href="djRock.html">
-        <button type="button" class="btn btn-success readMore">Read More</button>
-      </a>
-    </div>
-  </div><!-- end of row -->
-
-  <div class="row post">
-    <div class="col-lg-8 col-md-8">
-      <img class="img-responsive projectImg"src="img/foodChain.png"/>
-    </div>
-    <div class="col-lg-4 col-md-4 info">
-      <h1>Block-Chain Hackathon</h1>
-      <h3>Block-Chain Hackathon... </h3>
-      <a href="foodMatrix.html">
-        <button type="button" class="btn btn-success readMore">Read More</button>
-      </a>
-    </div>
-  </div><!-- end of row -->
-
-  <div class="row post">
-    <div class="col-lg-8 col-md-8">
-      <img class="img-responsive projectImg"src="img/1.png"/>
-    </div>
-    <div class="col-lg-4 col-md-4 info">
-      <h1>Web Developer Internship</h1>
-      <h3>I attended a web developer internship in the Summer of 2016 and it was a remarkably exciting experience. Learning the...</h3>
-      <a href="internship.html">
-        <button type="button" class="btn btn-success readMore">Read More</button>
-      </a>
-    </div>
-  </div><!-- end of row -->
-
-  <div class="row post">
-    <div class="col-lg-8 col-md-8">
-      <img class="img-responsive projectImg"src="img/atxHackathon.png"/>
-    </div>
-    <div class="col-lg-4 col-md-4 info">
-      <h1>ATX Hack For Change</h1>
-      <h3>
-        Austin Texas Hack For Change
-      </h3>
-      <a href="touse.html">
-        <button type="button" class="btn btn-success">Read More</button>
-      </a>
-    </div>
-  </div> <!-- end of row -->
-
-  <div class="row post">
-    <div class="col-lg-8 col-md-8">
-      <img class="img-responsive projectImg"src="img/cars.png"/>
-    </div>
-    <div class="col-lg-4 col-md-4 info">
-      <h1>1st-class-cars project</h1>
-      <h3>
-        The place to get a 1st class car at 5% below msrp
-      </h3>
-      <a href="cars.html">
-        <button type="button" class="btn btn-success">Read More</button>
-      </a>
-    </div>
-  </div> <!-- end of row -->
-
-  <div class="row post">
-    <div class="col-lg-8 col-md-8">
-      <img class="img-responsive projectImg"src="img/vet.png"/>
-    </div>
-    <div class="col-lg-4 col-md-4 info">
-      <h1>Va Hackathon for Veterans with PTSD</h1>
-      <h3>
-        Va Hackathon for Veterans with PTSD
-      </h3>
-      <a href="veterans.html">
-        <button type="button" class="btn btn-success">Read More</button>
-      </a>
-    </div>
-  </div> <!-- end of row -->
-
-  <div class="row post">
-    <div class="col-lg-8 col-md-8">
-      <img class="img-responsive projectImg" src="img/dreamCalculator.png"/>
-    </div>
-    <div class="col-lg-4 col-md-4 info">
-      <h1>Dream Calculator</h1>
-      <h3>
-        The Dream Calculator Det...
-      </h3>
-      <a href="dreamCalculator.html">
-        <button type="button" class="btn btn-success">Read More</button>
-      </a>
-    </div>
-  </div> <!-- end of row -->
-
-  <div class="row post">
-    <div class="col-lg-8 col-md-8">
-      <img class="img-responsive projectImg" src="img/fatAlbert.png"/>
-    </div>
-    <div class="col-lg-4 col-md-4 info">
-      <h1>Galvanize Hackathon</h1>
-      <h3>
-        very first hackathon
-      </h3>
-      <a href="fatAlbert.html">
-        <button type="button" class="btn btn-success">Read More</button>
-      </a>
-    </div>
-  </div> <!-- end of row -->
-</div><!-- end of container -->
-
-
-
+    <!-- angular route -->
+    <script src="js/angular-route.min.js"></script>
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+    <!-- controllers -->
+    <script src="js/controllers/mainController.js"></script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- header text js -->

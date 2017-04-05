@@ -1,0 +1,29 @@
+<div ng-controller="mainController">
+  <div id="headerContainer">
+    <img src="img/austin.jpg" id="headerImg">
+    <div id="headerText">
+      <h1>
+        <a href="" class="typewrite" id="headerTyping">
+          <span class="wrap">Hello Im Zachariah a developer who works with html, css, javascript, jquery, bootstrap, angular, and linux</span>
+        </a>
+      </h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row post" ng-repeat=" site in sites ">
+      <div class="col-lg-8 col-md-8">
+        <img class="img-responsive projectImg" ng-src="{{ site.image }}"/>
+      </div>
+      <div class="col-lg-4 col-md-4 info">
+        <h1>{{ site.name | uppercase }}</h1>
+        <h3>
+          {{ site.descreption }}
+        </h3>
+        <a ng-href="{{ site.link }}">
+          <button type="button" class="btn btn-success">Read More</button>
+        </a>
+      </div>
+    </div> <!-- end of row -->
+  </div><!-- end of container -->
+</div>
